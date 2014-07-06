@@ -31,9 +31,12 @@ TEST_RUNNER = 'django.test.simple.DjangoTestSuiteRunner'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': ':memory:',
-        'TEST_NAME': ':memory:',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'zbackend',
+        'HOST': '192.168.50.4',
+        'PORT': '5432',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres'
     },
 }
 
